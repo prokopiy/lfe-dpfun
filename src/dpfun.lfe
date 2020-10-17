@@ -64,7 +64,7 @@
 
 
 (defun get-nearest-left-point-from-list
-  (('() t (cons head tail)) (get-nearest-left-point-from-list head t tail))
+  (('() t points) (get-nearest-left-point-from-list (list 0 0) t points))
   ((last _ '()) last)
   ((last t (cons head tail))
     (if (and (=< (car head) t) (> (car head) (car last))) 
