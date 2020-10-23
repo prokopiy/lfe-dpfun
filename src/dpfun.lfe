@@ -59,7 +59,7 @@
 
 
 
-(defun zero [_ _]
+(defun zero [_ _]
   0)
 
 
